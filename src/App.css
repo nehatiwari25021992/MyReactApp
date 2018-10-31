@@ -3,8 +3,20 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 100%;
+  width : 100%;
+
+}
+
+.relClass{
+  position: relative;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.absClass{
+  position: absolute;
 }
 
 .App-header {
@@ -22,11 +34,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
