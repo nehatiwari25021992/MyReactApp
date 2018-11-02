@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
 import './App.css';
+import List  from './flowers/list'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
           <p class="relClass">
             Welcome to Flower Shop !!!
           </p>
+          <List season="Spring"/>
         </header>
       </div>
     );
