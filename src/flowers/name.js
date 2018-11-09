@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Name = (props) => {
-    if(props.children){
-        return ( <h3>{props.children}</h3>)
+    if(props.flowername){
+        return ( <h3>{props.flowername.text} | {props.flowername.quantity} | {props.flowername.price * props.flowername.quantity} </h3>)
     }else{
         return (<div> -- </div>)
     }
