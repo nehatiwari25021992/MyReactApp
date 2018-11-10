@@ -1,7 +1,16 @@
-import React, { Component} from 'react';
+import React, { Component , Fragment} from 'react';
 import Name from './name'
 import Cart from './cart'
 import UniqueId from 'react-html-id';
+
+const Header = (props) =>{
+    return (
+        <Fragment>
+        <h2>{props.greeting}</h2>
+        <h1>Season Flower List</h1>
+        </Fragment>
+    )
+}
 
 class List extends Component{
 
@@ -96,7 +105,7 @@ class List extends Component{
                  ---- <button onClick={this.changeQuantitytoTwo.bind(this,2)} >Custom Quantity 2 </button>
                  <br/>
                  <label>Your Quatity : </label> <input type="number" min="1" value={this.state.customQuantity} onChange={this.changeQuantity} />
-                    <h1>{this.props.season} Season Flower List</h1>
+                    <Header greeting={this.props.season}/>
                     <table>
                         <thead>
                             <tr>
